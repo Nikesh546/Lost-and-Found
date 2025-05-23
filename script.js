@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const confirmPassword = document.getElementById('confirmPassword').value;
         const terms = document.getElementById('terms').checked;
         
+        
         // Basic validation
         if (!firstName || !lastName || !email || !phone || !password || !confirmPassword) {
             alert('Please fill in all fields');
@@ -20,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (password !== confirmPassword) {
             alert('Passwords do not match');
+            return;
+        }
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+=[\]{}|;':",.<>/?-]).{8,}$/;
+        if (!passwordRegex.test(password)) {
+            alert('Password must be at least 8 characters long and include uppercase letters, lowercase letters, numbers, and special characters');
             return;
         }
         
