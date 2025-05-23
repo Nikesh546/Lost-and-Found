@@ -63,11 +63,19 @@
         </span>
     </div>
 </div>
+
                 
                 <div class="form-group">
                     <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" required>
+                    
+                     <div style="position:relative;">
+        <input type="password" id="confirmPassword" required>
+        <span id="toggleconfirmPassword" style="position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor:pointer;">
+            👁️
+        </span>
+
                 </div>
+                
                 
                 <div class="form-group checkbox">
                     <input type="checkbox" id="terms" required>
@@ -81,7 +89,7 @@
                 <button type="button" class="btn-social google">Register with Google</button>
                 <button type="button" class="btn-social facebook">Register with Facebook</button>
                 
-                <p class="login-link">Already have an account? <a href="#">Login</a></p>
+                <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
             </form>
         </div>
     </main>

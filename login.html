@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindIt - Login to Your Account</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Find<span>It</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Lost Items</a></li>
+                    <li><a href="#">Found Items</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h1>Login to Your Account</h1>
+            <p class="subtitle">Welcome back! Please login to access your account.</p>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="btn-primary">Login</button>
+                
+                <div class="divider">OR</div>
+                
+                <button type="button" class="btn-social google">Login with Google</button>
+                <button type="button" class="btn-social facebook">Login with Facebook</button>
+                
+                <p class="register-link">Don't have an account? <a href="index.html">Register</a></p>
+                
+                <p class="demo-credentials">
+                    Demo credentials: demo@example.com / password
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>About FindIt</h3>
+                <div class="footer-underline"></div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-underline"></div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="footer-underline"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
